@@ -1,0 +1,30 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  .table th {
+    background-color: #f0f0f0;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  .sai{
+    background-color: black;
+  }
+  .add{
+    display: flex;
+    width: 200px;
+    height: 150px;
+    margin-left: 32em;
+    margin-top: 3em;
+    border: solid black;
+    background-color:antiquewhite
+  }

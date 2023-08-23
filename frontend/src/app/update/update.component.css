@@ -1,0 +1,9 @@
+.add{
+    display: flex;
+    width: 200px;
+    height: 150px;
+    margin-left: 32em;
+    margin-top: 3em;
+    border: solid black;
+    background-color:antiquewhite
+  }

@@ -1,0 +1,31 @@
+<div class="add">
+<form #productsForm="ngForm" (ngSubmit)="onProductCreate(productsForm.value)">
+    <label>Name</label>
+<input type="text" name="name" ngModel>
+<label>Address</label>
+<input type="text" name="addres" ngModel> 
+<button type="submit">submit</button>
+</form>
+</div>
+<br><br>
+<table class="table table-striped">
+    <thead class="sai">
+        <tr class="sai">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Operations</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let d of item">
+            <td>{{d.id}}</td>
+            <td>{{d.name}}</td>
+            <td>{{d.addres}}</td>
+            <td><button class="btn btn-warning"  routerLink="/up/{{d.id}}">update</button>&nbsp;&nbsp;<button  class="btn btn-danger" (click)="delete(d.id)">delete</button></td>
+        </tr>
+
+
+    </tbody>
+</table>
